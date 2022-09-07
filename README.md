@@ -2,6 +2,13 @@
 
 ## VERSION
 
+### 0.5: Added basic JavaScript
+
+* Added necessary JavaScript files
+* utilities.js (asyn) for classes and functions
+* image-data.js (defer) for array of imgData
+* carousel-app.js (defer) the actual app running the web
+
 ### 0.4: Completed CSS styling (with placeholder)
 
 * Completed CSS styling with placeholder images

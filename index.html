@@ -29,7 +29,9 @@
     <link rel="stylesheet" href="./stylesheets/style.css" type="text/css">
 
     <!-- My Scripts -->
-    <script src="./scripts/script.js" type="text/javascript" defer></script>
+    <script src="./scripts/utilities.js" type="text/javascript" async></script>
+    <script src="./scripts/image-data.js" type="text/javascript" defer></script>
+    <script src="./scripts/carousel-app.js" type="text/javascript" defer></script>
     <!--#endregion Stylesheets and Scripts -->
 
     <!--#region META -->
@@ -51,7 +53,7 @@
                 <h2 class="ms_carousel-title visually-hidden">Sliding Carousel</h2>
                 
                 <!--#region carousel-images -->
-                <div class="ms_carousel-images"> <!-- object fit cover -->
+                <div id="carousel-images" class="ms_carousel-images"> <!-- object fit cover -->
                     <img class="ms_carousel-img active img-fluid" src="./assets/img/test-placeholders/01.jpg" alt="Test Placeholder" role="img">
                 </div>
                 <!--#endregion carousel-images -->
@@ -94,7 +96,7 @@
             <nav id="carousel-nav" class="ms_carousel-nav">
                 <h3 class="visually-hidden">Carousel Thumbnails</h3>
 
-                <div class="ms_carousel-nav-images">
+                <div id="carousel-nav-images" class="ms_carousel-nav-images">
                     <a class="ms_carousel-nav-item" href="#"><img class="ms_carousel-nav-img active img-thumbnail" src="./assets/img/test-placeholders/01.jpg" alt="Person sitting at a lake's pier" role="img"></a>
                     <a class="ms_carousel-nav-item" href="#"><img class="ms_carousel-nav-img img-thumbnail" src="./assets/img/test-placeholders/01.jpg" alt="Person sitting at a lake's pier" role="img"></a>
                     <a class="ms_carousel-nav-item" href="#"><img class="ms_carousel-nav-img img-thumbnail" src="./assets/img/test-placeholders/01.jpg" alt="Person sitting at a lake's pier" role="img"></a>
