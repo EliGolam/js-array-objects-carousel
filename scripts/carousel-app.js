@@ -15,7 +15,6 @@ for(let image of imgData) {
 console.log('DEBUG - imgCollection', imgCollection);
 
 
-
 // Global DOM elements
 const carouselImages = document.getElementById('carousel-images');
 const carouselNavImages = document.getElementById('carousel-nav-images');
