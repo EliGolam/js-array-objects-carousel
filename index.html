@@ -2,7 +2,7 @@
 <html lang="en">
 <!-- METADATA -->
 <head>
-    <title>Title</title>
+    <title>A simple Sliding Carousel | by Elias</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <meta charset="UTF-8">
@@ -42,6 +42,69 @@
 
 <!-- BODY -->
 <body>
-    
+    <!--#region MAIN -->
+    <main>
+        <!-- Container for the carousel -->
+        <div class="ms_main-container"> <!-- position relative -->
+            <!--#region carousel -->
+            <section id="carousel" class="ms_carousel-container"> <!-- position relative -->
+                <h2 class="ms_carousel-title visually-hidden">Sliding Carousel</h2>
+                
+                <!--#region carousel-images -->
+                <div class="ms_carousel-images"> <!-- object fit cover -->
+                    <img class="ms_carousel-img active img-fluid" src="./assets/img/test-placeholders/01.jpg" alt="Test Placeholder" role="img">
+                </div>
+                <!--#endregion carousel-images -->
+
+                <!--#region carousel-buttons -->
+                <div class="ms_carousel-buttons"> <!-- position absolute -->
+                    <!-- Slider previous button -->
+                    <div class="ms_previous-button">
+                        <button class="ms_carousel-btn ms_previous-left btn btn-primary" type="button" role="button" aria-label="Previous">
+                            <svg class="bi bi-chevron-left" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                        </button>
+                        <button class="ms_carousel-btn ms_previous-up btn btn-primary" type="button" role="button" aria-label="Previous">
+                            <svg class="bi bi-chevron-up" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Slider next button -->
+                    <div class="ms_next-button">
+                        <button class="ms_carousel-btn ms_next-right btn btn-primary" type="button" role="button" aria-label="Next">
+                            <svg class="bi bi-chevron-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </button>
+                        <button class="ms_carousel-btn ms_next-down btn btn-primary" type="button" role="button" aria-label="Previous">
+                            <svg class="bi bi-chevron-down" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!--#endregion carousel-button -->
+            </section>
+            <!--#endregion carousel -->
+
+            <!--#region carusel-nav -->
+            <nav id="carousel-nav" class="ms_carousel-nav">
+                <h3 class="visually-hidden">Carousel Thumbnails</h3>
+
+                <div class="ms_carousel-nav-images">
+                    <a class="ms_carousel-nav-item" href="#"><img class="ms_carousel-nav-img active img-thumbnail" src="./assets/img/test-placeholders/01.jpg" alt="Person sitting at a lake's pier" role="img"></a>
+                    <a class="ms_carousel-nav-item" href="#"><img class="ms_carousel-nav-img img-thumbnail" src="./assets/img/test-placeholders/01.jpg" alt="Person sitting at a lake's pier" role="img"></a>
+                    <a class="ms_carousel-nav-item" href="#"><img class="ms_carousel-nav-img img-thumbnail" src="./assets/img/test-placeholders/01.jpg" alt="Person sitting at a lake's pier" role="img"></a>
+                    <a class="ms_carousel-nav-item" href="#"><img class="ms_carousel-nav-img img-thumbnail" src="./assets/img/test-placeholders/01.jpg" alt="Person sitting at a lake's pier" role="img"></a>
+                    <a class="ms_carousel-nav-item" href="#"><img class="ms_carousel-nav-img img-thumbnail" src="./assets/img/test-placeholders/01.jpg" alt="Person sitting at a lake's pier" role="img"></a>
+                </div>
+            </nav>
+            <!--#endregion carusel-nav -->
+        </div>
+    </main>
+    <!--#endregion MAIN -->
 </body>
 </html>
