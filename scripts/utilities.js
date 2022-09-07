@@ -30,7 +30,6 @@ function buildCollectionDOM(collectionArray, containerDomId, activeIndex) {
         if (collectionArray.indexOf(element) === activeIndex) {
             image.classList.add('active');
         }
-
         container.append(image);
     }
 }
@@ -54,4 +53,41 @@ function generateImagePaths (amountImages, path, imgFormat) {
     }
 
     return imgPaths;
+}
+
+
+function moveCarousel (imgs, nav, direction) {
+    for (let i = 0; i < imgs.length; i++) {
+        console.log('DEBUG - renderImages: OK!');
+        // Define direction: 
+        direction = (direction === 'previous' || direction === 'back' || direction === -1) ? -1 : 1;
+        let position;
+
+        // Find currently active image
+        if ( imgs[i].classList.contains('active') ) {
+            // When active image is found we need to make sure the new image will not be out of bounds
+            switch (i + direction) {
+                case (imgs.length): {
+                    position = 0;
+                    break;
+                }
+                case (-1): {
+                    position = imgs.length - 1;
+                    break;
+                }
+                default: {
+                    position = i + direction;
+                }
+            }
+
+            // Activate new image on carousel trhough position
+            imgs[position].classList.add('active');
+            nav[position].classList.add('active');
+
+            // Remove previously active image
+            imgs[i].classList.remove('active');
+            nav[i].classList.remove('active');
+            break;
+        }
+    }
 }

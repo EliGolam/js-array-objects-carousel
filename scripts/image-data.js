@@ -12,7 +12,7 @@ const THUMBNAIL_IMG_ID = 'carousel-nav-images';
 
 // CSS Class List
 const IMG_CLASS_LIST = ['ms_carousel-img', 'img-fluid']; 
-const THUMBNAIL_CLASS_LIST = ['ms_carousel-nav-item', 'ms_carousel-nav-img', 'img-thumbnail'];
+const THUMBNAIL_CLASS_LIST = ['ms_carousel-nav-img', 'ms_carousel-nav-item', 'img-thumbnail'];
 
 
 // Images Data

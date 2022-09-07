@@ -29,6 +29,47 @@ console.log('DEBUG - imgThumbnails', imgThumbnails);
 buildCarousel(imgCollection, imgThumbnails, activeImgIdx);
 
 
+/* ********************************************************* */
+// DOM Elements
+const carouselImg = document.querySelectorAll('.ms_carousel-img');
+const carouselNavImg = document.querySelectorAll('.ms_carousel-nav-img');
+console.log(carouselImg, carouselNavImg);
+
+const prevButton = document.querySelector('.ms_previous-button');
+const nextButton = document.querySelector('.ms_next-button');
+
+///////////////////////////////////////////////////////////////
+// CAROUSEL BUTTONS 
+// Carousel Previous
+prevButton.addEventListener('click', () => {
+    console.log('DEBUG - prevButton: Clicked');
+    moveCarousel(carouselImg, carouselNavImg, 'previous');
+});
+
+// Carousel Next
+nextButton.addEventListener('click', () => {
+    console.log('DEBUG - nextButton: Clicked');
+    moveCarousel(carouselImg, carouselNavImg, 'next');
+});
+
+// CAROUSEL NAVIGATION
+for (let i = 0; i < carouselImg.length; i++) {
+    carouselNavImg[i].addEventListener('click', () => {
+        console.log('DEBUG - carouselNavImg Click: OK!');
+
+        for (let j = 0; j < carouselNavImg.length; j++) {
+            if (j === i) {
+                continue;
+            }
+            carouselImg[j].classList.remove('active');
+            carouselNavImg[j].classList.remove('active');
+        }
+
+        carouselImg[i].classList.add('active');
+        carouselNavImg[i].classList.add('active');
+    })
+}
+
 
 
 
