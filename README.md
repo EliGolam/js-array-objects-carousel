@@ -2,6 +2,8 @@
 
 ## VERSION
 
+### 0.6: Added JavaScript Ability to inject images into the DOM
+
 ### 0.5.1: Added array of Image objects for the main images in the carousel
 
 ### 0.5: Added basic JavaScript

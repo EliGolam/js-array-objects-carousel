@@ -4,7 +4,15 @@ console.log('DEBUG - image-data.js: OK!');
 // DATA PATH
 const IMG_FORMAT = '.jpg';
 const CAROUSEL_IMG_PATH = './assets/img/';
-const CAROUSEL_THUMBNAIL_PATH = './assets/img/thumbnails';
+const CAROUSEL_THUMBNAIL_PATH = './assets/img/thumbnails/';
+
+// DOM-IDs
+const CAROUSEL_IMG_ID = 'carousel-images';
+const THUMBNAIL_IMG_ID = 'carousel-nav-images';
+
+// CSS Class List
+const IMG_CLASS_LIST = ['ms_carousel-img', 'img-fluid']; 
+const THUMBNAIL_CLASS_LIST = ['ms_carousel-nav-item', 'ms_carousel-nav-img', 'img-thumbnail'];
 
 
 // Images Data
@@ -16,7 +24,6 @@ const imgData = [
     ['Sunset', "Sitting woman's silhouette from the back as she makes the heart sign with her hands, between which the glow of the sunset can be seen"]
 ]
 console.log('DEBUG - imgData', imgData);
-
 
 // Update Images Data
 for(let imgIdx = 0; imgIdx < imgData.length; imgIdx++) {
